@@ -1,0 +1,7 @@
+#mainFooter{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    min-height: 50vh;
+    background: lightgrey;
+}

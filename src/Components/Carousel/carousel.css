@@ -1,0 +1,81 @@
+.secHolder{
+    width: 100%;
+    padding: 2rem;
+    text-shadow:0 0 2px #000;
+    background: yellowgreen;
+}
+
+.carouselWrap{
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 50vh;
+    background: #000;
+    color: white;
+}
+.poster{
+    object-fit: cover;
+    width: 100%;
+    max-height:80%;
+    border-radius: 6px;
+}
+.carouselWrap .el{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    flex:40%;
+    max-width: 500px;
+    height: 350px;
+    background: rgb(49, 49, 49);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.8s ease-in;
+}
+.top{
+    width: 100%;
+    height: 20%;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-inline: 1rem;
+}
+.name{
+    font-family: monospace,Times;
+}
+.rating{
+    visibility: hidden;
+    z-index: 10;
+}
+.carouselEl .btnWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0 at 100% 0);
+    z-index:-1;
+    background: #00000062;
+    transition: all 0.8s ease-in;
+    cursor: default;
+}
+.btnWrap .btn{
+    transition: all 0.4s 1s ease-in;
+}
+.carouselEl:hover > .btnWrap{
+    clip-path: circle(200vh at 100% 0);
+    z-index: 1;
+}

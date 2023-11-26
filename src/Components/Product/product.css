@@ -1,0 +1,28 @@
+.cardTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contentImage{
+    object-fit:cover;
+    border-radius:12px 12px 0 0 ;
+    transition: all 0.5s ease;
+    height: 60%;
+    background: #000;
+}
+.desc{
+    height: 40%;
+    background: #000;
+    padding: 0.2rem;
+    color: whitesmoke;
+}

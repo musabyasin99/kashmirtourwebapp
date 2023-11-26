@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cedarville+Cursive&display=swap');
+
+
+#mainHeader{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 99.9%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background: black;
+    color:white;
+    padding-inline: 10px;
+    z-index: 20;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:1rem;
+}
+
+.title{
+    border-radius: 12px;
+    padding: 0.2rem 0.5rem;
+    font-family: "Cedarville Cursive";
+    cursor: pointer;
+}
+
+#navList{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    gap:1rem;
+    width: 100%;
+}
+
+.navItem{
+    padding: 12px;
+    border-bottom: 1px solid transparent;
+    background: transparent;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid silver;
+}
+
+.navItem:hover{
+    background: rgba(24, 7, 1, 0.336);
+    border-bottom: 1px solid silver;
+}
