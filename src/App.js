@@ -63,9 +63,9 @@ function App() {
             <Header btnAction={ViewHideForm} sidebarState={isActive} setSidebarState={handleButtonClick} setAllState={handleLinkClick}/>
               <main style={{'marginTop':'70px'}}>
                 <Routes>
-                  <Route exact path='/' element={<Home setFormState={isVisible} sidebarState={isActive} setAllState={handleLinkClick}/>} />
-                  <Route exact path='/plan' element={<Plans setFormState={isVisible} />}/>
-                  <Route exact path='/package/:id' element={<Package setFormState={isVisible}/>}/>
+                  <Route exact path='/kashmirtourwebapp' element={<Home setFormState={isVisible} sidebarState={isActive} setAllState={handleLinkClick}/>} />
+                  <Route exact path='plan' element={<Plans setFormState={isVisible} />}/>
+                  <Route exact path='package/:id' element={<Package setFormState={isVisible}/>}/>
                 </Routes>
               </main>
             <Footer />
