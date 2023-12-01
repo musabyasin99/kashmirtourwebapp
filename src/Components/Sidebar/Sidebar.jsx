@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+
 
 
 import HeaderItem from '../Header/HeaderNav/HeaderItem';
@@ -10,21 +10,16 @@ import ButtonEl from './ButtonEl';
 
 
 
-function Sidebar({setFormState}) {
-  const [isActive,setIsActive] = useState(false);
-
-    const handleButtonClick = () => {
-        setIsActive(!isActive);
-    }
+function Sidebar({setFormState,sidebarState,setSidebarState,setAllState}) {
   return (
     <>
-        <button id='toggle' onClick={handleButtonClick} className={isActive?'active':''}>
+        <button id='toggle' onClick={setSidebarState} className={sidebarState?'active':''}>
         </button>
-        <nav id='mainSidebar' className={isActive ? 'active' : ''}>
+        <nav id='mainSidebar' className={sidebarState ? 'active' : ''}>
             <ul id='itemList'>
-                <HeaderItem link={{id:'home',title:"Home"}} />
-                <HeaderItem link={{id:'plans',title:"Plans"}} />
-                <HeaderItem link={{id:'contact',title:'Call Now'}} />
+                <HeaderItem link={{id:'home',title:"Home",href:"/"}} setAllState={setAllState} />
+                <HeaderItem link={{id:'plans',title:"Plans",href:"/plan"}} setAllState={setAllState}/>
+                <HeaderItem link={{id:'contact',title:'Call Now',href:"#"}} setAllState={setAllState}/>
                 <ButtonEl properties={{Id:"formBtn",Title:"Book a call",setFormState:setFormState}} />
             </ul>
         </nav>

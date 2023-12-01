@@ -2,12 +2,11 @@
 
 // import HeaderNav from './HeaderNav/HeaderNav'
 
-// import Logo from './Logo.png';
 
 import './header.css';
 import Sidebar from '../Sidebar/Sidebar';
 
-function Header({btnAction}) {
+function Header({btnAction,sidebarState,setSidebarState,setAllState}) {
   // const [showSB,setShowSB] = useState(false);
 
   // const handleResize = () =>{
@@ -40,7 +39,7 @@ function Header({btnAction}) {
       <div className="logo">
         <h3 className='title'>My Kashmir.Tour</h3>
       </div>
-          <Sidebar setFormState={btnAction} />
+          <Sidebar setFormState={btnAction} sidebarState={sidebarState} setSidebarState={setSidebarState} setAllState={setAllState}/>
     </header>
     </>
   )

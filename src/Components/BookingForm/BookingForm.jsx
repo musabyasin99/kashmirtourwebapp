@@ -1,7 +1,7 @@
 import './bookingform.css'
 import React from 'react'
 
-function BookingForm({setFormState}) {
+function BookingForm({setFormState,sidebarState}) {
   return (
     <form id='bookingForm' className={setFormState === true ? 'form active' : 'form'}>
         <h1 className='form-label lbl'> Book A Call</h1>

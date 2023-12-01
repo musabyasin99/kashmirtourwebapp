@@ -49,12 +49,20 @@
     background: transparent;
     color: white;
     transition: all 0.2s;
-    cursor: pointer;
     width: 100%;
     border-bottom: 1px solid silver;
 }
 
-.navItem:hover{
+.navItem .link{
+    padding: 12px;
+    border-bottom: 1px solid transparent;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.navItem .link:hover{
     background: rgba(24, 7, 1, 0.336);
-    border-bottom: 1px solid silver;
 }

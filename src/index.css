@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cedarville+Cursive&display=swap');
+
+
 ::-webkit-scrollbar{
   width: 16px;
   background: black;
@@ -34,11 +37,23 @@ h1,h2,h3,h4,h5,h6,a,p{
 li{
   list-style: none;
 }
-a{
+Link,a{
+  color:white;
   text-decoration: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body{
+  background: black;
+}
+
+main{
+  margin-top:70px;
+  width:100%;
+  background:black;
+  min-height:calc(100vh - 80px);
 }

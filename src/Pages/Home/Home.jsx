@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 
-import Main from '../Main/Main'
-import Carousel from '../Carousel/Carousel'
-import CarouselSlider from '../CarouselSlider/CarouselSlider'
+import Main from '../../Components/Main/Main'
+import Carousel from '../../Components/Carousel/Carousel'
+import CarouselSlider from '../../Components/CarouselSlider/CarouselSlider'
 
 import SliderImage from '../Assets/bg1.jpg';
 import Logo from '../Assets/Logo.png';
 
-function Home({setFormState}) {
+function Home({setFormState,sidebarState,setAllState}) {
+
     const [productList,setProductList] = useState([
         {
           Name:"Item 1",
@@ -80,10 +81,10 @@ function Home({setFormState}) {
     });
   return (
     <main style={{'marginTop':'70px','width':'100%','background':'black'}}>
-      <Main setFormState={setFormState}/>
-      <Carousel CarouselDetails={carousel1Data}/>
-      <CarouselSlider SliderDetails={slider1Data}/>
-      <Carousel CarouselDetails={carousel2Data}/>
+      <Main setFormState={setFormState} sidebarState={sidebarState}/>
+      <Carousel  CarouselDetails={carousel1Data}/>
+      <CarouselSlider  SliderDetails={slider1Data} setAllState={setAllState}/>
+      <Carousel  CarouselDetails={carousel2Data}/>
     </main>
   )
 }
