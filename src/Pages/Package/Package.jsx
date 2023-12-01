@@ -52,6 +52,7 @@ function Package({setFormState}) {
           </div>
         </section>
        </main>
+       <button className='bookService'>Book Now</button>
     </section>
     {<BookingForm setFormState={setFormState}/>}
     </>
