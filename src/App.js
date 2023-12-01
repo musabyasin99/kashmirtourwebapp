@@ -64,8 +64,8 @@ function App() {
               <main style={{'marginTop':'70px'}}>
                 <Routes>
                   <Route exact path='/kashmirtourwebapp' element={<Home setFormState={isVisible} sidebarState={isActive} setAllState={handleLinkClick}/>} />
-                  <Route exact path='plan' element={<Plans setFormState={isVisible} />}/>
-                  <Route exact path='package/:id' element={<Package setFormState={isVisible}/>}/>
+                  <Route exact path='/kashmirtourwebapp/plan' element={<Plans setFormState={isVisible} />}/>
+                  <Route exact path='/kashmirtourwebapp/package/:id' element={<Package setFormState={isVisible}/>}/>
                 </Routes>
               </main>
             <Footer />

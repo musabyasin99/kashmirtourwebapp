@@ -18,7 +18,7 @@ function Sidebar({setFormState,sidebarState,setSidebarState,setAllState}) {
         <nav id='mainSidebar' className={sidebarState ? 'active' : ''}>
             <ul id='itemList'>
                 <HeaderItem link={{id:'home',title:"Home",href:"/kashmirtourwebapp/"}} setAllState={setAllState} />
-                <HeaderItem link={{id:'plans',title:"Plans",href:"plan"}} setAllState={setAllState}/>
+                <HeaderItem link={{id:'plans',title:"Plans",href:"/kashmirtourwebapp/plan"}} setAllState={setAllState}/>
                 <HeaderItem link={{id:'contact',title:'Call Now',href:"#"}} setAllState={setAllState}/>
                 <ButtonEl properties={{Id:"formBtn",Title:"Book a call",setFormState:setFormState}} />
             </ul>
