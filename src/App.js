@@ -43,13 +43,13 @@ function App() {
     setIsLoading(true);
     setTimeout(()=>{
       setIsLoading(false);
-      if(isVisible){
-        setIsVisible(false);
-      }
-      if(isActive){
-        handleButtonClick();
-      }
-  },3000);
+    },3000);
+    if(isVisible){
+      setIsVisible(false);
+    }
+    if(isActive){
+      handleButtonClick();
+    }
   }
   setTimeout(()=>{
     setIsLoading(false);
