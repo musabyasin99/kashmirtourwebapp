@@ -1,14 +1,18 @@
 import React from 'react'
-import BookingForm from '../../Components/BookingForm/BookingForm'
+import BookingForm from '../../Components/BookingForm/BookingForm';
+import PlanList from '../../Components/PlanList/PlanList';
 
-function Plans({setFormState}) {
+function Plans({setFormState,setAllState}) {
   return (
-    <main>
-        <h1>
-            Plans
-        </h1>
-        <BookingForm setFormState={setFormState}/>
-    </main>
+    <>
+      <main>
+          <h1 className='secHolder'>
+              Our Packages
+          </h1>
+          <PlanList setAllState={setAllState}/>
+          <BookingForm setFormState={setFormState}/>
+      </main>
+    </>
   )
 }
 

@@ -3,26 +3,25 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    gap: 1rem;
     width: 100%;
     padding: 0.5rem;
+}
+.contentImage{
+    object-fit:cover;
+    border-radius:12px 12px 0 0 ;
+    transition: all 0.5s ease;
+    height: 50%;
+    background: #000;
 }
 .desc{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.contentImage{
-    object-fit:cover;
-    border-radius:12px 12px 0 0 ;
-    transition: all 0.5s ease;
-    height: 55%;
+    height: 50%;
     background: #000;
-}
-.desc{
-    height: 45%;
-    background: #000;
-    padding: 0.2rem;
     color: whitesmoke;
+}
+.desc .description{
+    padding: 1rem;
 }

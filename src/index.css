@@ -30,6 +30,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.secHolder{
+  margin-block: 0.3rem;
+}
 h1,h2,h3,h4,h5,h6,a,p{
   text-align: center;
   cursor:default;
@@ -52,7 +55,7 @@ body{
 }
 
 main{
-  margin-top:70px;
+  margin-top:60px;
   width:100%;
   background:black;
   min-height:calc(100vh - 80px);

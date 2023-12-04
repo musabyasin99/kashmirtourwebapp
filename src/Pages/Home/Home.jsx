@@ -80,7 +80,7 @@ function Home({setFormState,sidebarState,setAllState}) {
         ProductList:productList
     });
   return (
-    <main style={{'marginTop':'70px','width':'100%','background':'black'}}>
+    <main>
       <Main setFormState={setFormState} sidebarState={sidebarState}/>
       <Carousel  CarouselDetails={carousel1Data}/>
       <CarouselSlider  SliderDetails={slider1Data} setAllState={setAllState}/>
