@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kashmirtourwebapp/static/css/main.a74397db.css",
-    "main.js": "/kashmirtourwebapp/static/js/main.a366c7be.js",
+    "main.css": "/kashmirtourwebapp/static/css/main.ec622a63.css",
+    "main.js": "/kashmirtourwebapp/static/js/main.46406898.js",
     "static/media/bg1.jpg": "/kashmirtourwebapp/static/media/bg1.238df277f7d6de4ca932.jpg",
     "static/media/bg2.jpg": "/kashmirtourwebapp/static/media/bg2.6d23d58b073db8594458.jpg",
     "static/media/Logo.png": "/kashmirtourwebapp/static/media/Logo.d0a9052e08d7e47051fb.png",
@@ -9,11 +9,11 @@
     "static/media/revicons.ttf": "/kashmirtourwebapp/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/kashmirtourwebapp/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/kashmirtourwebapp/index.html",
-    "main.a74397db.css.map": "/kashmirtourwebapp/static/css/main.a74397db.css.map",
-    "main.a366c7be.js.map": "/kashmirtourwebapp/static/js/main.a366c7be.js.map"
+    "main.ec622a63.css.map": "/kashmirtourwebapp/static/css/main.ec622a63.css.map",
+    "main.46406898.js.map": "/kashmirtourwebapp/static/js/main.46406898.js.map"
   },
   "entrypoints": [
-    "static/css/main.a74397db.css",
-    "static/js/main.a366c7be.js"
+    "static/css/main.ec622a63.css",
+    "static/js/main.46406898.js"
   ]
 }
